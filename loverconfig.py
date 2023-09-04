@@ -27,7 +27,7 @@ To generate links in **group chats**, add me to your supergroup and send the com
 
 🏠 | [Home](https://t.me/EsproSupport)
             """
-    await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
+    await teletip.send_message(message.chat.id, text, disable_web_page_preview=True)
     
 
 teletip.on_message(filters.media & filters.private)
