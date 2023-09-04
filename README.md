@@ -8,7 +8,7 @@ TelegraphLink</h1>
 
 ### Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/irtkaal/Telegraph-Link-pic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new-app?template=https://github.com/irtkaal/Telegraph-Link-pic)
 
 ## Config Vars
 1. `API_ID` : Telegram API_ID, get it from my.telegram.org/apps
