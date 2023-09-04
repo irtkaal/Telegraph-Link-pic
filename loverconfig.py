@@ -14,7 +14,7 @@ teletips=Client(
     bot_token = os.environ["BOT_TOKEN"]
 )
 
-teletip.on_message(filters.command('start') & filters.private)
+teletips.on_message(filters.command('start') & filters.private)
 async def start(client, message):
     text = f"""
 Heya {message.from_user.mention},
@@ -27,7 +27,7 @@ To generate links in **group chats**, add me to your supergroup and send the com
 
 🏠 | [Home](https://t.me/EsproSupport)
             """
-    await teletip.send_message(message.chat.id, text, disable_web_page_preview=True)
+    await teletips.send_message(message.chat.id, text, disable_web_page_preview=True)
     
 
 teletips.on_message(filters.media & filters.private)
@@ -50,7 +50,7 @@ async def get_link_private(client, message):
     except Exception:
         pass        
 
-teletip.on_message(filters.command('tl'))
+teletips.on_message(filters.command('tl'))
 async def get_link_group(client, message):
     try:
         text = await message.reply("Processing...")
